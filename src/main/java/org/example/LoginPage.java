@@ -11,9 +11,9 @@ public class LoginPage {
     private WebDriverWait wait;
 
     // Locators
-    private By emailField = By.name("email");
+    private By username = By.name("username");
     private By passwordField = By.name("password");
-    private By loginButton = By.cssSelector(".login-btn");
+    private By loginButton = By.xpath("//button");
 
     // Constructor
     public LoginPage(WebDriver driver) {
@@ -23,7 +23,7 @@ public class LoginPage {
 
     // Page Actions with Explicit Wait
     public void enterEmail(String email) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(emailField)).sendKeys(email);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(username)).sendKeys(email);
     }
 
     public void enterPassword(String password) {
@@ -42,6 +42,6 @@ public class LoginPage {
 
     // Method to verify successful login
     public boolean isLoginSuccessful() {
-        return wait.until(ExpectedConditions.urlContains("dashboard/partner/users"));
+        return wait.until(ExpectedConditions.urlContains("/dashboard/index"));
     }
 }
