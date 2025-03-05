@@ -74,7 +74,7 @@
                 <version>3.0.0-M5</version>  <!-- use the latest version -->
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>  <!-- path to your testng.xml -->
+                        <suiteXmlFile>src\test\resources\testNG.xml</suiteXmlFile>  <!-- path to your testng.xml -->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
