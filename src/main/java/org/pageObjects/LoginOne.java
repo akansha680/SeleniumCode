@@ -1,4 +1,4 @@
-package org.example;
+package org.pageObjects;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
